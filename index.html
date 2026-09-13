@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Mahajan | B.Tech CSE (AI & DS)</title>
+  <meta name="description" content="Personal website of Harsh Mahajan - B.Tech CSE (AI & DS) Student. Exploring Artificial Intelligence, Data Science, and Web Development." />
+  
+  <!-- Google Fonts: Inter font for clean, modern look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Linking our CSS stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">
+        <span class="logo-accent">HM</span>.dev
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="container">
+      <div class="badge">🤖 B.Tech CSE (AI & Data Science)</div>
+      <h1 class="hero-title">
+        Hello! I'm <span class="highlight">Harsh Mahajan</span>
+      </h1>
+      <p class="hero-subtitle">
+        Aspiring AI Engineer & Developer. Building intelligent systems and learning full-stack web development.
+      </p>
+      
+      <!-- Interactive Greeting Box (Powered by JavaScript) -->
+      <div class="greeting-box" id="greetingBox">
+        <p id="greetingText">Loading greeting...</p>
+        <button id="quoteBtn" class="btn btn-secondary">Get AI Motivation 💡</button>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Connect With Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">My Tech Domains</h2>
+      <p class="section-subtitle">Core areas I am passionate about and currently mastering.</p>
+      
+      <div class="grid cards-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-icon">🧠</div>
+          <h3>Artificial Intelligence</h3>
+          <p>Studying machine learning algorithms, deep learning models, and neural network architectures.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3>Data Science</h3>
+          <p>Working with data visualization, statistical analysis, Python (NumPy, Pandas), and data pipelines.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Learning HTML, CSS, JavaScript, and creating responsive web interfaces from scratch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project / Counter Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Interactive Showcase</h2>
+      <p class="section-subtitle">Testing JavaScript DOM manipulation and event listeners.</p>
+
+      <div class="interactive-card">
+        <h3>Project Appreciation Counter</h3>
+        <p>Click the button below to see JavaScript dynamically update the state on the page in real-time!</p>
+        
+        <div class="counter-display">
+          <span class="counter-number" id="likeCounter">0</span>
+          <span class="counter-label">Stars Given ⭐</span>
+        </div>
+
+        <button id="likeBtn" class="btn btn-primary">Star This Project ⭐</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <h3>Let's Connect!</h3>
+      <p>Harsh Mahajan | B.Tech CSE (AI & DS)</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="mailto:harsh@example.com">Email Me</a>
+      </div>
+      <p class="copyright">© 2026 Harsh Mahajan. Built with HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- Linking our JavaScript file at the end of the body -->
+  <script src="script.js"></script>
+</body>
+</html>
