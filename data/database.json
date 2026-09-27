@@ -1,0 +1,140 @@
+{
+  "documents": [
+    {
+      "id": "doc-101",
+      "title": "Government Identity & Address Verification",
+      "category": "Identification",
+      "type": "document",
+      "uploader": "Harsh Mahajan",
+      "filename": "Aadhaar_National_ID.pdf",
+      "filepath": "uploads/Aadhaar_National_ID.pdf",
+      "filesize": "1.4 MB",
+      "filetype": "application/pdf",
+      "created_at": "2026-09-20 14:32",
+      "description": "Official national identification proof document for KYC and verification."
+    },
+    {
+      "id": "doc-102",
+      "title": "B.Tech Computer Science Official Transcript",
+      "category": "Academic",
+      "type": "document",
+      "uploader": "Harsh Mahajan",
+      "filename": "BTech_CSE_Semester_Transcripts.pdf",
+      "filepath": "uploads/BTech_CSE_Semester_Transcripts.pdf",
+      "filesize": "3.8 MB",
+      "filetype": "application/pdf",
+      "created_at": "2026-09-22 11:15",
+      "description": "Consolidated marksheet and university grade sheets for CSE AI & Data Science."
+    },
+    {
+      "id": "doc-103",
+      "title": "Executive Software Engineering Resume 2026",
+      "category": "Resume",
+      "type": "document",
+      "uploader": "Harsh Mahajan",
+      "filename": "Harsh_Mahajan_AI_Resume_2026.pdf",
+      "filepath": "uploads/Harsh_Mahajan_AI_Resume_2026.pdf",
+      "filesize": "420 KB",
+      "filetype": "application/pdf",
+      "created_at": "2026-09-25 09:40",
+      "description": "Latest updated curriculum vitae highlighting Full-Stack, Python, and AI projects."
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert-201",
+      "title": "Professional Machine Learning Engineer Certificate",
+      "issuer": "Google Cloud & DeepLearning.AI",
+      "credential_id": "GCP-MLE-994102",
+      "category": "Artificial Intelligence",
+      "type": "certificate",
+      "uploader": "Harsh Mahajan",
+      "filename": "google_ml_engineer_cert.png",
+      "filepath": "uploads/google_ml_engineer_cert.png",
+      "filesize": "2.1 MB",
+      "filetype": "image/png",
+      "issue_date": "2026-05-18",
+      "verified": true,
+      "created_at": "2026-09-18 16:00",
+      "description": "Validated expertise in production ML pipelines, TensorFlow, PyTorch, and scalable inference."
+    },
+    {
+      "id": "cert-202",
+      "title": "Full-Stack Web & Python Development Masterclass",
+      "issuer": "Coursera / Meta",
+      "credential_id": "META-DEV-88231",
+      "category": "Web Development",
+      "type": "certificate",
+      "uploader": "Harsh Mahajan",
+      "filename": "meta_fullstack_cert.png",
+      "filepath": "uploads/meta_fullstack_cert.png",
+      "filesize": "1.8 MB",
+      "filetype": "image/png",
+      "issue_date": "2026-04-10",
+      "verified": true,
+      "created_at": "2026-09-19 12:20",
+      "description": "Comprehensive certification covering Python, HTML5, CSS3, JavaScript, and REST APIs."
+    },
+    {
+      "id": "cert-203",
+      "title": "National Hackathon 2026 First Runner Up",
+      "issuer": "TechFest Innovation Summit",
+      "credential_id": "TF-HACK-1ST-2026",
+      "category": "Hackathons & Competitions",
+      "type": "certificate",
+      "uploader": "Harsh Mahajan",
+      "filename": "hackathon_runnerup_badge.png",
+      "filepath": "uploads/hackathon_runnerup_badge.png",
+      "filesize": "1.5 MB",
+      "filetype": "image/png",
+      "issue_date": "2026-07-28",
+      "verified": true,
+      "created_at": "2026-09-21 17:50",
+      "description": "Awarded for designing and deploying an autonomous AI documentation and verification system."
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "opp-301",
+      "title": "AI & Python Software Developer Intern",
+      "organization": "HyperScale AI Technologies",
+      "type": "Internship",
+      "location": "Remote / Bengaluru",
+      "stipend": "₹40,000 / month",
+      "deadline": "2026-10-25",
+      "apply_url": "https://linkedin.com/jobs",
+      "posted_by": "Harsh Mahajan",
+      "tags": ["Python", "FastAPI", "LLM", "Docker"],
+      "created_at": "2026-09-24 10:00",
+      "description": "Seeking motivated engineers to build automated workflow tools and real-time backend microservices with Python."
+    },
+    {
+      "id": "opp-302",
+      "title": "Global Open Source Web & AI Hackathon",
+      "organization": "DevPost & Global Tech League",
+      "type": "Hackathon",
+      "location": "Online / Virtual",
+      "stipend": "$15,000 Prize Pool",
+      "deadline": "2026-11-05",
+      "apply_url": "https://devpost.com",
+      "posted_by": "Harsh Community",
+      "tags": ["Hackathon", "Open Source", "JavaScript", "Python"],
+      "created_at": "2026-09-25 15:30",
+      "description": "48-hour global hackathon to build open web applications, document management utilities, and developer tooling."
+    },
+    {
+      "id": "opp-303",
+      "title": "Frontend & UI/UX Specialist Contract",
+      "organization": "AeroTrade Global Portals",
+      "type": "Freelance Project",
+      "location": "Remote",
+      "stipend": "₹65,000 fixed milestone",
+      "deadline": "2026-10-18",
+      "apply_url": "https://wellfound.com",
+      "posted_by": "Harsh Mahajan",
+      "tags": ["CSS3", "JavaScript", "Figma", "Responsive"],
+      "created_at": "2026-09-26 14:10",
+      "description": "Looking for a UI designer/developer to craft responsive dashboards and certificate verification interfaces."
+    }
+  ]
+}

@@ -1,128 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harsh Mahajan | B.Tech CSE (AI & DS)</title>
-  <meta name="description" content="Personal website of Harsh Mahajan - B.Tech CSE (AI & DS) Student. Exploring Artificial Intelligence, Data Science, and Web Development." />
-  
-  <!-- Google Fonts: Inter font for clean, modern look -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Linking our CSS stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <div class="container nav-content">
-      <div class="logo">
-        <span class="logo-accent">HM</span>.dev
-      </div>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh's Import & Export | Connecting India to Global Markets</title>
+  <!-- Modern Google Fonts: Outfit for titles, Plus Jakarta Sans for body text -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <style>
+    /* 1. COLOR VARIABLES & BASE RESET */
+    :root {
+      --navy: #0a192f;
+      --card-bg: #112240;
+      --gold: #f59e0b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background: #070e1c;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    /* 2. NAVIGATION BAR */
+    header {
+      background: var(--navy);
+      border-bottom: 1px solid #233554;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    .logo {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .nav a:hover {
+      color: var(--gold);
+    }
+
+    /* 3. HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 70px 0 50px;
+      background: radial-gradient(circle at top, #1e3a8a, #070e1c);
+    }
+
+    .hero h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: auto auto 25px;
+      font-size: 1.1rem;
+    }
+
+    /* 4. BUTTONS */
+    .btn {
+      background: var(--gold);
+      color: #070e1c;
+      padding: 11px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #d97706;
+      transform: translateY(-2px);
+    }
+
+    /* 5. SECTIONS & RESPONSIVE CARDS GRID */
+    .section {
+      padding: 50px 0;
+    }
+
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid #233554;
+      border-radius: 10px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
+    }
+
+    .card h3 {
+      color: var(--gold);
+      margin-bottom: 10px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* 6. BUSINESS ENQUIRY FORM */
+    .form-box {
+      background: var(--card-bg);
+      border: 1px solid #233554;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 550px;
+      margin: auto;
+    }
+
+    .form-box input,
+    .form-box textarea,
+    .form-box select {
+      width: 100%;
+      padding: 11px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #233554;
+      background: #0a192f;
+      color: #fff;
+      outline: none;
+    }
+
+    .form-box input:focus,
+    .form-box textarea:focus {
+      border-color: var(--gold);
+    }
+
+    /* 7. FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      border-top: 1px solid #233554;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER NAVIGATION -->
+  <header>
+    <div class="container nav">
+      <div class="logo">⚓ Harsh's Import & Export</div>
       <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
-
-  <!-- Hero Section -->
-  <section id="about" class="hero">
+  <!-- HERO SECTION -->
+  <section class="hero">
     <div class="container">
-      <div class="badge">🤖 B.Tech CSE (AI & Data Science)</div>
-      <h1 class="hero-title">
-        Hello! I'm <span class="highlight">Harsh Mahajan</span>
-      </h1>
-      <p class="hero-subtitle">
-        Aspiring AI Engineer & Developer. Building intelligent systems and learning full-stack web development.
-      </p>
-      
-      <!-- Interactive Greeting Box (Powered by JavaScript) -->
-      <div class="greeting-box" id="greetingBox">
-        <p id="greetingText">Loading greeting...</p>
-        <button id="quoteBtn" class="btn btn-secondary">Get AI Motivation 💡</button>
-      </div>
-
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Connect With Me</a>
-      </div>
+      <h1>Connecting India to <span>Global Markets</span></h1>
+      <p>Building reliable trade connections between domestic suppliers, businesses, and international buyers.</p>
+      <a href="#contact" class="btn">Get a Quote</a>
     </div>
   </section>
-
-  <!-- About & Skills Section -->
-  <section id="skills" class="section">
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section">
     <div class="container">
-      <h2 class="section-title">My Tech Domains</h2>
-      <p class="section-subtitle">Core areas I am passionate about and currently mastering.</p>
-      
-      <div class="grid cards-grid">
-        <!-- Card 1 -->
+      <h2 class="section-title">Our Trade Services</h2>
+      <div class="grid">
         <div class="card">
-          <div class="card-icon">🧠</div>
-          <h3>Artificial Intelligence</h3>
-          <p>Studying machine learning algorithms, deep learning models, and neural network architectures.</p>
+          <h3>📥 Import Services</h3>
+          <p>Coordinating quality product sourcing from overseas suppliers directly to India.</p>
         </div>
-
-        <!-- Card 2 -->
         <div class="card">
-          <div class="card-icon">📊</div>
-          <h3>Data Science</h3>
-          <p>Working with data visualization, statistical analysis, Python (NumPy, Pandas), and data pipelines.</p>
+          <h3>📤 Export Services</h3>
+          <p>Helping Indian manufacturers reach customers and lucrative foreign markets.</p>
         </div>
-
-        <!-- Card 3 -->
         <div class="card">
-          <div class="card-icon">💻</div>
-          <h3>Web Development</h3>
-          <p>Learning HTML, CSS, JavaScript, and creating responsive web interfaces from scratch.</p>
+          <h3>🚢 Global Logistics</h3>
+          <p>Managing end-to-end sea cargo, air freight, and commercial documentation.</p>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Interactive Project / Counter Section -->
-  <section id="projects" class="section section-alt">
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section" style="background: #091322;">
     <div class="container">
-      <h2 class="section-title">Interactive Showcase</h2>
-      <p class="section-subtitle">Testing JavaScript DOM manipulation and event listeners.</p>
-
-      <div class="interactive-card">
-        <h3>Project Appreciation Counter</h3>
-        <p>Click the button below to see JavaScript dynamically update the state on the page in real-time!</p>
-        
-        <div class="counter-display">
-          <span class="counter-number" id="likeCounter">0</span>
-          <span class="counter-label">Stars Given ⭐</span>
+      <h2 class="section-title">Why Partner With Us?</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🛡️ Trust & Transparency</h3>
+          <p>Clear communication, honest pricing, and strict adherence to timelines.</p>
         </div>
-
-        <button id="likeBtn" class="btn btn-primary">Star This Project ⭐</button>
+        <div class="card">
+          <h3>🌐 Global Network</h3>
+          <p>Connecting target corridors across Asia, Europe, Middle East, and the Americas.</p>
+        </div>
+        <div class="card">
+          <h3>⚡ Rapid Coordination</h3>
+          <p>24/7 client support and active tracking from origin to destination.</p>
+        </div>
       </div>
     </div>
   </section>
-
-  <!-- Contact & Footer -->
-  <footer id="contact" class="footer">
+  <!-- CONTACT ENQUIRY FORM -->
+  <section id="contact" class="section">
     <div class="container">
-      <h3>Let's Connect!</h3>
-      <p>Harsh Mahajan | B.Tech CSE (AI & DS)</p>
-      <div class="footer-links">
-        <a href="https://github.com" target="_blank">GitHub</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        <a href="mailto:harsh@example.com">Email Me</a>
-      </div>
-      <p class="copyright">© 2026 Harsh Mahajan. Built with HTML, CSS & JavaScript.</p>
+      <h2 class="section-title">Send Business Enquiry</h2>
+      <form class="form-box" id="tradeForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Business Email" required>
+        <select id="service">
+          <option value="Import">Import Service</option>
+          <option value="Export">Export Service</option>
+          <option value="Logistics">Logistics</option>
+        </select>
+        <textarea id="msg" rows="3" placeholder="Requirement details..." required></textarea>
+        <button type="submit" class="btn" style="width: 100%;">Submit Enquiry ✉️</button>
+      </form>
     </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Harsh's Import & Export | Developed by Harsh Mahajan (B.Tech CSE - AI & DS)</p>
+    <p style="margin-top: 5px;">📍 [Office Address, India] • 📞 [+91 98765 43210] • 📧 [contact@harshimportexport.com]
+    </p>
   </footer>
-
-  <!-- Linking our JavaScript file at the end of the body -->
-  <script src="script.js"></script>
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    document.getElementById('tradeForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const clientName = document.getElementById('name').value;
+      alert('Thank you ' + clientName + '! Your trade enquiry has been received. We will contact you soon.');
+      this.reset();
+    });
+  </script>
 </body>
+
 </html>

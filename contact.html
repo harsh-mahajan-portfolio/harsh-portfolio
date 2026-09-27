@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Harsh's Import & Export — Business Enquiries</title>
+  
+  <meta name="description" content="Reach out to Harsh's Import & Export for trade inquiries, sourcing requests, and international logistics coordination." />
+  <meta name="author" content="Harsh's Import & Export" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Harsh's Import & Export Homepage">
+        <div class="logo-badge">HIE</div>
+        <div class="logo-text">
+          <span class="logo-name">Harsh's Import & Export</span>
+          <span class="logo-tagline">Global Trade Logistics</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="index.html#global-reach" class="nav-link">Global Reach</a>
+        <a href="index.html#why-us" class="nav-link">Why Us</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="contact.html" class="btn btn-primary nav-cta-btn">Get a Quote</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="badge badge-gold" style="margin-bottom: 16px;">Initiate a Trade Dialogue</div>
+      <h1 class="page-hero-title">Contact Our Trade Desk</h1>
+      <p class="page-hero-subtitle">
+        Have an import or export requirement? Send us your specifications, and we will connect with you promptly.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Contact Section -->
+  <section class="section section-light" id="contact-info">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Column 1: Company Contact Details & Placeholders -->
+        <div class="contact-info-card reveal">
+          <h2 class="contact-info-title">Corporate Details</h2>
+          <p class="contact-info-desc">
+            Get in touch directly with our coordination team for commercial queries, quotes, or supplier alignment.
+          </p>
+
+          <!-- Email -->
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-label">Business Email</div>
+              <p class="contact-value">[contact@harshimportexport.com]</p>
+              <span class="contact-placeholder-tag">Editable Placeholder</span>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-label">Direct Phone</div>
+              <p class="contact-value">[+91 98765 43210]</p>
+              <span class="contact-placeholder-tag">Editable Placeholder</span>
+            </div>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div>
+              <div class="contact-label">WhatsApp Business</div>
+              <p class="contact-value">[+91 98765 43210]</p>
+              <span class="contact-placeholder-tag">Editable Placeholder</span>
+            </div>
+          </div>
+
+          <!-- Office Address -->
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Office Location</div>
+              <p class="contact-value">[Commercial Complex, City, State, PIN, India]</p>
+              <span class="contact-placeholder-tag">Editable Placeholder</span>
+            </div>
+          </div>
+
+          <!-- Operating Hours -->
+          <div class="contact-item">
+            <div class="contact-icon">🕒</div>
+            <div>
+              <div class="contact-label">Business Hours</div>
+              <p class="contact-value">Monday – Saturday: 9:00 AM – 6:00 PM IST</p>
+              <p style="color: #94a3b8; font-size: 0.82rem; margin-top: 2px;">Sunday: Closed for Logistics Clearance</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Business Enquiry Form (With Frontend JS Validation) -->
+        <div class="form-card reveal">
+          <h2 class="form-title">Send Business Enquiry</h2>
+          <p class="form-subtitle">
+            Fill out the form below with your requirements. We will review your inquiry and follow up shortly.
+          </p>
+
+          <!-- Success Alert Notification (Triggered by JS) -->
+          <div class="form-alert-success" id="formSuccessAlert" role="alert">
+            <strong>✓ Enquiry Received!</strong> Thank you for reaching out to Harsh's Import & Export. Your inquiry has been registered locally. (Note: This is a frontend demo and will connect to your email server once backend/form service is configured.)
+          </div>
+
+          <form id="businessEnquiryForm" novalidate>
+            <div class="form-grid">
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g. Rahul Sharma" required />
+                <span class="error-message" id="nameError">Please enter your full name (minimum 2 characters).</span>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="email" class="form-label">Business Email *</label>
+                <input type="email" id="email" class="form-control" placeholder="name@company.com" required />
+                <span class="error-message" id="emailError">Please enter a valid business email address.</span>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone / Mobile Number *</label>
+                <input type="tel" id="phone" class="form-control" placeholder="+91 98765 43210" required />
+                <span class="error-message" id="phoneError">Please enter a valid phone number (at least 7 digits).</span>
+              </div>
+
+              <!-- Company Name -->
+              <div class="form-group">
+                <label for="company" class="form-label">Company / Business Name</label>
+                <input type="text" id="company" class="form-control" placeholder="Your Enterprise Name" />
+              </div>
+
+              <!-- Country -->
+              <div class="form-group">
+                <label for="country" class="form-label">Country / Target Region *</label>
+                <input type="text" id="country" class="form-control" placeholder="e.g. India, UAE, Germany" required />
+                <span class="error-message" id="countryError">Please specify your country or market.</span>
+              </div>
+
+              <!-- Service Required -->
+              <div class="form-group">
+                <label for="service" class="form-label">Service Required *</label>
+                <select id="service" class="form-control" required>
+                  <option value="">Select a Service...</option>
+                  <option value="import">Import Services</option>
+                  <option value="export">Export Services</option>
+                  <option value="sourcing">Global Sourcing</option>
+                  <option value="coordination">Trade Coordination</option>
+                  <option value="logistics">Logistics Support</option>
+                  <option value="documentation">Documentation Guidance</option>
+                  <option value="other">General Commercial Inquiry</option>
+                </select>
+                <span class="error-message" id="serviceError">Please select a service category.</span>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group full-width">
+                <label for="message" class="form-label">Message / Requirement Details *</label>
+                <textarea id="message" class="form-control" rows="5" placeholder="Describe the products, estimated volume, target destinations, or questions..." required></textarea>
+                <span class="error-message" id="messageError">Please provide at least 10 characters describing your inquiry.</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+              Send Business Enquiry ✉️
+            </button>
+            <p style="font-size: 0.8rem; color: #64748b; margin-top: 10px; text-align: center;">
+              🔒 Your commercial details are treated with strict confidentiality.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-badge">HIE</div>
+            <div class="logo-text">
+              <span class="logo-name">Harsh's Import & Export</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Connecting businesses, markets, and opportunities across borders with dependable trade coordination.
+          </p>
+          <div class="social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">ig</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">fb</a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">wa</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="index.html#global-reach">Global Reach</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#import">Import Services</a></li>
+            <li><a href="services.html#export">Export Services</a></li>
+            <li><a href="services.html#sourcing">Global Sourcing</a></li>
+            <li><a href="services.html#logistics">Logistics Coordination</a></li>
+            <li><a href="services.html#documentation">Documentation Guidance</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-links">
+            <li>📧 [Business Email: contact@harshimportexport.com]</li>
+            <li>📞 [Phone Number: +91 98765 43210]</li>
+            <li>📍 [Office Address: City, State, India]</li>
+            <li>🕒 Mon – Sat: 9:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Harsh's Import & Export. All Rights Reserved.</p>
+        <p class="disclaimer">Developed by Harsh Mahajan — B.Tech CSE (AI & DS). All business details are editable placeholders.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
